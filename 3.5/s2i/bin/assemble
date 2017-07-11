@@ -21,7 +21,7 @@ fi
 
 if [[ -f requirements.txt ]]; then
   echo "---> Installing dependencies ..."
-  pip install -r requirements.txt
+  pip install -i http://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com -r requirements.txt
 fi
 
 if [[ -f setup.py ]]; then
